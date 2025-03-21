@@ -1,145 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Integrated file: Content from the research scholar merged with Vinod’s design -->
 <head>
-  <meta charset="UTF-8">
-  <title>Gautam Siddharath Kashyap - Research Scholar</title>
-  <!-- Link to the same CSS/theme as Vinod’s repo -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Add any additional meta tags as needed -->
+  <!-- Meta tags and Google verification from Vinod's design -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="Gautam Siddharath Kashyap – Research Scholar Portfolio. Passionate about optimization, AI, and innovative research solutions." />
+  <meta name="keywords"
+    content="Gautam Siddharath Kashyap, research scholar, optimization, metaheuristics, AI, machine learning" />
+  <meta name="author" content="Gautam Siddharath Kashyap" />
+  <meta property="og:image" content="path/to/your-preview-image.png" />
+  <meta property="og:title" content="Gautam Siddharath Kashyap – Research Scholar Portfolio" />
+  <meta property="og:description"
+    content="Discover the work and research contributions of Gautam Siddharath Kashyap in optimization, AI, and more." />
+  <meta property="og:url" content="https://yourdomain.com" />
+  <meta property="og:site_name" content="Gautam Siddharath Kashyap Portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yourtwitterhandle" />
+  <meta name="twitter:title" content="Gautam Siddharath Kashyap – Research Scholar Portfolio" />
+  <meta name="twitter:description"
+    content="Research Scholar Portfolio by Gautam Siddharath Kashyap, focusing on real-world optimization and AI innovation." />
+  <meta name="twitter:image" content="path/to/your-preview-image.png" />
+  <title>Gautam Siddharath Kashyap – Research Scholar Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" />
+
+  <!-- AOS CSS for animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
+    integrity="sha512-GqG7eA8ztrMVw/33TOUONf1vZ0G3F+6B1UKuTRlnQW38B7cJYJVbZPovpXBrYpZtOD3VUqA1a3t7fLA6AXdN/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+  <!-- Link to the CSS from Vinod's repo -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <!-- Header with Navigation -->
+<body class="body">
+  <!-- Preloader (optional; remove if not needed) -->
+  <div id="preloader"></div>
+  <noscript>Please enable JavaScript to view this site.</noscript>
+
+  <!-- Navigation -->
   <header>
-    <div class="container">
-      <h1>Gautam Siddharath Kashyap</h1>
+    <div class="navbar" id="navbar">
+      <div class="logo" tabindex="0" aria-label="Gautam Kashyap logo">
+        <!-- You can replace the logo image as needed -->
+        <img src="src/png/nav-avatar.png" alt="Gautam Kashyap" id="nav-avatar"/>
+      </div>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <!-- If you have a separate "Notes" section, add it here -->
-          <li><a href="notes.html">Notes</a></li>
+        <ul class="navbar-tabs-ul">
+          <li data-aos="fade-down" data-aos-delay="100"><a href="#home" tabindex="0" aria-label="Home">&#60;/Home&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="200"><a href="#about" aria-label="About">&#60;/About&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="300"><a href="#education" aria-label="Education">&#60;/Education&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="400"><a href="#skills" aria-label="Skills">&#60;/Skills&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="500"><a href="#publications" aria-label="Publications">&#60;/Publications&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="600"><a href="#experience" aria-label="Experience">&#60;/Experience&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="700"><a href="#research-interests" aria-label="Research Interests">&#60;/Research Interests&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="800"><a href="#contact" aria-label="Contact">&#60;/Contact&#62;</a></li>
+          <li data-aos="fade-down" data-aos-delay="900"><a href="CV1_GSK.pdf" target="_blank" aria-label="Download CV">Download CV</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      Passionate about innovation, real-world optimization problems, and software learning. A creative, unconventional researcher with interests spanning from metaheuristics to AI-driven applications in agriculture, healthcare, and security.
-    </p>
-    <ul class="contact-info">
-      <li>Email: <a href="mailto:gautamgsk.gsk@gmail.com">gautamgsk.gsk@gmail.com</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/gautam-kashyap-48021b159/">Gautam Kashyap</a></li>
-      <li>GitHub: <a href="https://github.com/gskgautam">gskgautam</a></li>
-      <li>ORCID: <a href="https://orcid.org/0000-0003-2140-9617">0000-0003-2140-9617</a></li>
-    </ul>
-  </section>
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="landing-page-container" data-aos="fade-up">
+      <div class="hero">
+        <h1>Gautam Siddharath Kashyap</h1>
+        <p>Research Scholar | Innovator in Optimization & AI</p>
+      </div>
+    </section>
 
-  <!-- Education Section -->
-  <section id="education" class="container">
-    <h2>Education</h2>
-    <div class="education-item">
-      <h3>Master of Computer Applications (MCA)</h3>
-      <p>Jamia Hamdard, New Delhi, India<br>
-         October 2021 – May 2023 | GPA: 4.06/5.0</p>
-      <p><em>MCA Thesis:</em> Optimizing Artificial Neural Network Training using Metaheuristics.</p>
-    </div>
-    <div class="education-item">
-      <h3>BSc Computer Science</h3>
-      <p>Jamia Hamdard, New Delhi, India<br>
-         August 2018 – July 2021 | GPA: 4.25/5.0 (1st Rank)</p>
-      <p><em>BSc Thesis:</em> Vehicle Routing Optimization for Supply Chain Management using RWPSO.</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate research scholar with expertise in real-world optimization, metaheuristics, and advanced AI methodologies.
+        Dedicated to developing innovative solutions, my work bridges academia and industry in agriculture, healthcare, and security.
+      </p>
+      <ul class="contact-info">
+        <li>Email: <a href="mailto:gautamgsk.gsk@gmail.com">gautamgsk.gsk@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/gautam-kashyap-48021b159/">Gautam Kashyap</a></li>
+        <li>GitHub: <a href="https://github.com/gskgautam">gskgautam</a></li>
+        <li>ORCID: <a href="https://orcid.org/0000-0003-2140-9617">0000-0003-2140-9617</a></li>
+      </ul>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="container">
-    <h2>Experience</h2>
-    <div class="experience-item">
-      <h3>Research Assistant, Tech Mahindra (Americas) Inc.</h3>
-      <p>August 2024 – October 2024 (Remotely)</p>
-      <p>Worked on audio deepfake detection using pre-trained models and explored the integration of GANs.</p>
-    </div>
-    <div class="experience-item">
-      <h3>Research Assistant, Microsoft Inc.</h3>
-      <p>April 2024 – July 2024 (Remotely)</p>
-      <p>Researched MLOps methods and analyzed LLMs (e.g., GPT, BERT) for applications beyond traditional NLP.</p>
-    </div>
-    <div class="experience-item">
-      <h3>Research Assistant, IIIT Delhi</h3>
-      <p>March 2023 – March 2024</p>
-      <p>Analyzed audio deepfake behavior using various pre-trained models and collaborated on tool development.</p>
-    </div>
-    <div class="experience-item">
-      <h3>Freelance Researcher, Upwork</h3>
-      <p>October 2021 – Ongoing</p>
-      <p>Top Rated Freelancer in Research Paper Writings with extensive project experience.</p>
-    </div>
-    <div class="experience-item">
-      <h3>Research Assistant, University of Stirling</h3>
-      <p>June 2021 – June 2023 (Remotely)</p>
-      <p>Worked on metaheuristics and machine learning; contributed to book chapters and journal submissions.</p>
-    </div>
-    <!-- Internships can be briefly summarized -->
-    <div class="experience-item">
-      <h3>Internships in Programming & Web Development</h3>
-      <p>Positions at Grahlaxmi International and Recon AppMagic Pvt. Ltd, enhancing coding and development skills.</p>
-    </div>
-  </section>
+    <!-- Education Section -->
+    <section id="education" data-aos="fade-up">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <h3>Master of Computer Applications (MCA)</h3>
+          <p>Jamia Hamdard, New Delhi, India (Oct 2021 – May 2023)</p>
+          <p>GPA: 4.06/5.0 | Thesis: Optimizing Artificial Neural Network Training using Metaheuristics</p>
+        </li>
+        <li>
+          <h3>BSc Computer Science</h3>
+          <p>Jamia Hamdard, New Delhi, India (Aug 2018 – Jul 2021)</p>
+          <p>GPA: 4.25/5.0 | Thesis: Vehicle Routing Optimization using RWPSO</p>
+        </li>
+        <li>
+          <h3>Certificate in Software Testing</h3>
+          <p>TTE Delhi, New Delhi, India (Jul 2017 – Jul 2018)</p>
+        </li>
+        <li>
+          <h3>A-Levels/12th CBSE Board</h3>
+          <p>Vandana International School, New Delhi, India (Jul 2016 – Jul 2017)</p>
+        </li>
+        <li>
+          <h3>O-Levels/10th CBSE Board</h3>
+          <p>Vandana International School, New Delhi, India (Jul 2014 – Jul 2015)</p>
+        </li>
+      </ul>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="container">
-    <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Detection of Facemask using Deep Learning</h3>
-      <p>A real-time system for facemask detection using deep learning techniques to help in Covid-19 prevention.</p>
-      <p>See details on <a href="https://github.com/Karan-Malik/FaceMaskDetectorAdvanced" target="_blank">GitHub</a>.</p>
-    </div>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-up">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> C, C++, Python, HTML, CSS, PHP</li>
+        <li><strong>Technical:</strong> Machine Learning, Data Science, Deep Learning, Data Structures</li>
+        <li><strong>Tools:</strong> Google Colab, Jupyter Notebook, GitHub, Microsoft Office</li>
+      </ul>
+    </section>
 
-  <!-- Publications Section -->
-  <section id="publications" class="container">
-    <h2>Publications</h2>
-    <ul>
-      <li>
-        <strong>Innovative Spatial-Temporal Attention Network (STAN)</strong> – IEEE Transactions on Neural Systems and Rehabilitation Engineering (2024, Under Review).
-      </li>
-      <li>
-        <strong>Optimizing Artificial Neural Network Training using Metaheuristics</strong> – Sadhana (2024, Under Review).
-      </li>
-      <li>
-        <strong>Optimization of the Rectangle Area inside a Concave Polygon using PSO and Tabu Search</strong> – Soft Computing (2024, Under Review).
-      </li>
-      <!-- Add more selected publications as desired -->
-    </ul>
-    <p>For a full list, please visit my <a href="https://scholar.google.com/citations?hl=en&user=p8cdsVoAAAAJ" target="_blank">Google Scholar</a> profile.</p>
-  </section>
+    <!-- Publications Section -->
+    <section id="publications" data-aos="fade-up">
+      <h2>Publications</h2>
+      <div class="publications-container">
+        <div class="publication-item" data-aos="flip-left">
+          <h3>Innovative Spatial-Temporal Attention Network (STAN)</h3>
+          <p>IEEE Transactions on Neural Systems and Rehabilitation Engineering (Under Review)</p>
+        </div>
+        <div class="publication-item" data-aos="flip-left" data-aos-delay="100">
+          <h3>Optimizing ANN Training using Metaheuristics</h3>
+          <p>Sadhana (Under Review)</p>
+        </div>
+        <div class="publication-item" data-aos="flip-left" data-aos-delay="200">
+          <h3>Optimization of the Rectangle Area using PSO and Tabu Search</h3>
+          <p>Soft Computing (Under Review)</p>
+        </div>
+        <div class="publication-item" data-aos="flip-left" data-aos-delay="300">
+          <h3>From Simulations to Reality: Multi-Robot Exploration for Urban Search and Rescue</h3>
+          <p>Journal of Supercomputing (Under Review) <a href="https://arxiv.org/abs/2311.16958" target="_blank">[Preprint]</a></p>
+        </div>
+      </div>
+      <p>For a full list, please visit my <a href="https://scholar.google.com/citations?hl=en&user=p8cdsVoAAAAJ" target="_blank">Google Scholar</a> profile.</p>
+    </section>
 
-  <!-- Skills & Certifications Section -->
-  <section id="skills" class="container">
-    <h2>Skills & Certifications</h2>
-    <p><strong>Programming:</strong> C, C++, Python, HTML, CSS, PHP</p>
-    <p><strong>Technical:</strong> Machine Learning, Data Science, Deep Learning, Data Structures</p>
-    <p><strong>Certifications:</strong> Neural Networks and Deep Learning, Supervised Machine Learning, Python Data Structures, and more.</p>
-  </section>
+    <!-- Experience Section -->
+    <section id="experience" data-aos="fade-up">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Research Assistant – Tech Mahindra (Americas) Inc.</h3>
+          <p>(Aug 2024 – Oct 2024, Remote)</p>
+          <p>Worked on pre-trained models, CNNs for audio deepfake detection, and explored GANs for innovative research applications.</p>
+        </li>
+        <li>
+          <h3>Research Assistant – Microsoft Inc.</h3>
+          <p>(Apr 2024 – Jul 2024, Remote)</p>
+          <p>Reviewed MLOps methods and analyzed LLMs like GPT and BERT for various applications.</p>
+        </li>
+        <li>
+          <h3>Research Assistant – IIIT Delhi</h3>
+          <p>(Mar 2023 – Mar 2024)</p>
+          <p>Collaborated on deepfake analysis projects and developed custom tools with PhD students.</p>
+        </li>
+        <li>
+          <h3>Freelance Researcher – Upwork</h3>
+          <p>(Oct 2021 – Present)</p>
+          <p>Top Rated Freelancer specializing in research paper writing and analysis.</p>
+        </li>
+        <li>
+          <h3>Research Assistant – University of Stirling</h3>
+          <p>(Jun 2021 – Jun 2023)</p>
+          <p>Contributed to metaheuristics research and published work in peer-reviewed channels.</p>
+        </li>
+        <li>
+          <h3>Internships in Programming & Web Development</h3>
+          <p>Gained practical experience at Grahlaxmi International and Recon AppMagic Pvt. Ltd.</p>
+        </li>
+      </ul>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>If you would like to get in touch for collaborations or inquiries, please contact me via email.</p>
-    <p>Email: <a href="mailto:gautamgsk.gsk@gmail.com">gautamgsk.gsk@gmail.com</a></p>
-  </section>
+    <!-- Research Interests Section -->
+    <section id="research-interests" data-aos="fade-up">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Real-World Optimization Problems</li>
+        <li>Metaheuristics Approaches (e.g., PSO, Genetic Algorithms)</li>
+        <li>AI & Machine Learning in Agriculture, Healthcare, and Security</li>
+        <li>Explainable AI & Usable Security</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>If you would like to get in touch for collaborations or inquiries, please contact me:</p>
+      <p>Email: <a href="mailto:gautamgsk.gsk@gmail.com">gautamgsk.gsk@gmail.com</a></p>
+      <p>Phone: +919599245342</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/gautam-kashyap-48021b159/" target="_blank">Gautam Kashyap</a></p>
+      <p>GitHub: <a href="https://github.com/gskgautam" target="_blank">gskgautam</a></p>
+      <p>ORCID: <a href="https://orcid.org/0000-0003-2140-9617" target="_blank">0000-0003-2140-9617</a></p>
+    </section>
+  </main>
 
   <!-- Footer -->
-  <footer class="container">
-    <p>&copy; 2025 Gautam Siddharath Kashyap. All rights reserved.</p>
+  <footer id="footer" data-aos="fade-up">
+    <div class="footercontainer">
+      <div class="footer-bottom">
+        <article>
+          Design & Built by Gautam Siddharath Kashyap &#169; 2025
+        </article>
+      </div>
+    </div>
   </footer>
+
+  <!-- JavaScript dependencies -->
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" 
+    integrity="sha512-8yeCefgrwqyuuCcpMcYa5P8sW0i02EyLTe59oGqmzP1FNTLTPjRysIWVnU7coS+X0zl/FXRh43uCkhzR3F5CZA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    AOS.init({
+      once: true
+    });
+  </script>
 </body>
 </html>
