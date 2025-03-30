@@ -1098,24 +1098,46 @@ noscript {
     background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color))
 }
 
-/* Updated CSS for simplebox */
-.simplebox {
-  width: 250px;       /* Adjust width to your desired size */
-  padding: 10px;      /* Adjust padding as needed */
-  font-size: 12px;    /* Set a smaller font size */
-  margin: 10px 0;     /* Vertical spacing for each box */
+/* Container for the certifications section */
+.certifications-section {
+  margin: 50px 0; /* Adjust top/bottom spacing as needed */
 }
 
-/* Updated CSS for simplebox wrapper */
-.simplebox-wrapper {
-  display: inline-block; /* To line up boxes horizontally */
-  margin-right: 15px;      /* Space between certification boxes */
+/* Style the heading if desired */
+.certifications-section .section-heading {
+  margin-bottom: 30px; /* Increase or decrease gap under heading */
 }
 
-/* Optional: Increase gap between the CV button and the new section */
-.section-heading {
-  margin-bottom: 20px;
+/* Remove default bullet styles and padding for the UL */
+.certifications-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
+
+/* Individual certification item “box” style */
+.certification-item {
+  background-color: #1f1f1f; /* Adjust to match your theme */
+  border: 1px solid #333;   /* Subtle border for box effect */
+  border-radius: 5px;       /* Rounded corners */
+  padding: 15px;            /* Spacing inside each box */
+  margin-bottom: 15px;      /* Spacing between items */
+}
+
+/* Style the title (h3) for each certification */
+.certification-title {
+  margin: 0;        /* Remove default margins if desired */
+  font-size: 1rem;  /* Adjust font size to be smaller or bigger */
+  color: #ffffff;   /* Text color */
+}
+
+/* (Optional) Additional styling for a short description */
+.certification-description {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #aaaaaa;
+}
+
 
 .tech-stack-wrapper {
     justify-content: center;
