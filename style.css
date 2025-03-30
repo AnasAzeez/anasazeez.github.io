@@ -1098,6 +1098,25 @@ noscript {
     background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color))
 }
 
+/* Updated CSS for simplebox */
+.simplebox {
+  width: 250px;       /* Adjust width to your desired size */
+  padding: 10px;      /* Adjust padding as needed */
+  font-size: 12px;    /* Set a smaller font size */
+  margin: 10px 0;     /* Vertical spacing for each box */
+}
+
+/* Updated CSS for simplebox wrapper */
+.simplebox-wrapper {
+  display: inline-block; /* To line up boxes horizontally */
+  margin-right: 15px;      /* Space between certification boxes */
+}
+
+/* Optional: Increase gap between the CV button and the new section */
+.section-heading {
+  margin-bottom: 20px;
+}
+
 .tech-stack-wrapper {
     justify-content: center;
     flex-wrap: wrap;
