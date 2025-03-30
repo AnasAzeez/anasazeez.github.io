@@ -1105,52 +1105,46 @@ noscript {
   margin: 50px 0; /* Spacing around the entire section */
 }
 
-/* Section heading (similar to Publications) */
+/* If your Publications heading has specific styles, 
+   replicate them here for a consistent look. */
 .certifications-section .section-heading {
   margin-bottom: 30px; 
-  /* 
-    If you want it identical to Publications, 
-    copy the exact heading styles used there.
-  */
 }
 
-/* Container that holds all certification “cards” */
+/* Container to hold and center the certification “cards” */
 .certification-list {
   display: flex;
-  flex-direction: column;
-  gap: 20px; /* Space between each certification box */
+  flex-direction: column;  /* Stack vertically */
+  align-items: center;     /* Center horizontally */
+  gap: 20px;               /* Space between each box */
 }
 
-/* The “box” for each certification */
+/* The “box” for each certification, matching or approximating 
+   the color & style from your Publications. */
 .certification-box {
-  background-color: #1f1f1f; /* Dark background */
-  border: 1px solid #333;   /* Subtle border to mimic a card edge */
-  border-radius: 10px;      /* Rounded corners (optional) */
-  padding: 20px;            /* Spacing inside the box */
-  color: #ffffff;           /* White text for visibility */
-  /* 
-    If your Publications boxes have shadows or transitions,
-    you can add them here. For example:
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-  */
+  background-color: #27293d; /* Example dark purple background */
+  border-radius: 10px;
+  padding: 20px;
+  color: #ffffff;           /* White text for contrast */
+  width: 80%;               /* Make the box wider */
+  max-width: 800px;         /* Limit how wide it can get */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Similar “card” shadow */
+  transition: transform 0.3s ease;           /* For a subtle hover effect */
 }
 
-/* Title styling */
+/* Title styling with increased font size and custom font family */
 .certification-title {
   margin: 0;
-  font-size: 1rem;  /* Adjust to your preferred size */
-  line-height: 1.4;
-  font-weight: 600; /* Semi-bold look */
+  font-size: 1.5rem;         /* Increased font size */
+  line-height: 1.5;          /* Adjusted line height for readability */
+  font-weight: 600; 
+  font-family: 'Poppins', sans-serif; /* Change to your desired font if needed */
 }
 
-/* Optional: If you want hover effects, 
-   similar to Publications (if they have any) */
+/* Optional: Hover effect to mimic Publications style */
 .certification-box:hover {
   transform: translateY(-3px);
-  /* or something subtle for effect */
 }
-
 
 .tech-stack-wrapper {
     justify-content: center;
