@@ -1098,44 +1098,57 @@ noscript {
     background-image: linear-gradient(to bottom right, var(--tech-stack-box-first-color), var(--tech-stack-box-second-color))
 }
 
-/* Container for the certifications section */
+/****************************************
+  SECTION: Certifications
+*****************************************/
 .certifications-section {
-  margin: 50px 0; /* Adjust top/bottom spacing as needed */
+  margin: 50px 0; /* Spacing around the entire section */
 }
 
-/* Style the heading if desired */
+/* Section heading (similar to Publications) */
 .certifications-section .section-heading {
-  margin-bottom: 30px; /* Increase or decrease gap under heading */
+  margin-bottom: 30px; 
+  /* 
+    If you want it identical to Publications, 
+    copy the exact heading styles used there.
+  */
 }
 
-/* Remove default bullet styles and padding for the UL */
-.certifications-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+/* Container that holds all certification “cards” */
+.certification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between each certification box */
 }
 
-/* Individual certification item “box” style */
-.certification-item {
-  background-color: #1f1f1f; /* Adjust to match your theme */
-  border: 1px solid #333;   /* Subtle border for box effect */
-  border-radius: 5px;       /* Rounded corners */
-  padding: 15px;            /* Spacing inside each box */
-  margin-bottom: 15px;      /* Spacing between items */
+/* The “box” for each certification */
+.certification-box {
+  background-color: #1f1f1f; /* Dark background */
+  border: 1px solid #333;   /* Subtle border to mimic a card edge */
+  border-radius: 10px;      /* Rounded corners (optional) */
+  padding: 20px;            /* Spacing inside the box */
+  color: #ffffff;           /* White text for visibility */
+  /* 
+    If your Publications boxes have shadows or transitions,
+    you can add them here. For example:
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  */
 }
 
-/* Style the title (h3) for each certification */
+/* Title styling */
 .certification-title {
-  margin: 0;        /* Remove default margins if desired */
-  font-size: 1rem;  /* Adjust font size to be smaller or bigger */
-  color: #ffffff;   /* Text color */
+  margin: 0;
+  font-size: 1rem;  /* Adjust to your preferred size */
+  line-height: 1.4;
+  font-weight: 600; /* Semi-bold look */
 }
 
-/* (Optional) Additional styling for a short description */
-.certification-description {
-  margin-top: 5px;
-  font-size: 0.9rem;
-  color: #aaaaaa;
+/* Optional: If you want hover effects, 
+   similar to Publications (if they have any) */
+.certification-box:hover {
+  transform: translateY(-3px);
+  /* or something subtle for effect */
 }
 
 
