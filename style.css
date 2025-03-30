@@ -23,6 +23,11 @@ noscript {
     height: 100%
 }
 
+.landing-page-container {
+  margin-top: 80px; /* Adjust 80px to match your navbar's height */
+}
+
+
 body,
 noscript {
     background-color: var(--color-dark-mode)
