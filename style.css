@@ -30,7 +30,7 @@ noscript {
 
 body,
 noscript {
-    background-color: var(--color-dark-mode)
+    background-color: var(--color-light-mode)
 }
 
 .main,
@@ -1121,10 +1121,10 @@ noscript {
 /* The “box” for each certification */
 .certification-box {
   /* Use theme-aware background colors */
-  background-color: var(--tech-stack-box-first-color);
+  background-color: var(--color-light-mode);
+  color: var(--color-black);
   border-radius: 10px;
   padding: 20px;
-  color: var(--color-white); /* Ensures contrast in dark mode */
   width: 80%;
   max-width: 800px;
   box-shadow: 0 4px 10px var(--color-shadowDark); /* Dynamic shadow */
