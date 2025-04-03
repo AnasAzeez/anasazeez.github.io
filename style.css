@@ -1107,16 +1107,25 @@ noscript {
 
 /* If your Publications heading has specific styles, 
    replicate them here for a consistent look. */
-.certifications-section .section-heading {
-  margin-bottom: 30px; 
+.certifications-section .section-heading h2 {
+  display: inline-flex;
+  align-items: center;
+  color: #c3c3c3; /* Adjust text color as needed */
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-.certifications-section .section-heading::after {
+
+/* Add a line in front of the heading */
+.certifications-section .section-heading h2::before {
   content: "";
-  flex-grow: 1;
-  height: 2px;
-  background: linear-gradient(to right, #c3c3c3, transparent);
-  margin-left: 10px;
+  display: inline-block;
+  width: 50px;       /* Length of the line */
+  height: 2px;       /* Thickness of the line */
+  background-color: #c3c3c3; /* Line color (adjust to match your Publications section) */
+  margin-right: 15px; /* Space between the line and heading text */
+  vertical-align: middle;
 }
+
 /* Container to hold and center the certification “cards” */
 .certification-list {
   display: flex;
