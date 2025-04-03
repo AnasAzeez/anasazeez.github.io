@@ -2080,6 +2080,21 @@ footer {
   display: none !important;
 }
 
+/* Target only the Experience section */
+#experience .project-box {
+  display: block;             /* Stack content vertically */
+  height: auto !important;    /* Allow height to adjust with content */
+}
+
+#experience .info-div {
+  width: 100% !important;      /* Use full width for the text */
+  padding: 20px;              /* Optional: adjust for better readability */
+}
+
+#experience .image-div {
+  display: none !important;   /* Hide image container if present */
+}
+
 
 @media only screen and (max-width: 1300px) and (max-height: 730px){
     .landing-page-container {
