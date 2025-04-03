@@ -1110,7 +1110,13 @@ noscript {
 .certifications-section .section-heading {
   margin-bottom: 30px; 
 }
-
+.certifications-section .section-heading::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background: linear-gradient(to right, #c3c3c3, transparent);
+  margin-left: 10px;
+}
 /* Container to hold and center the certification “cards” */
 .certification-list {
   display: flex;
