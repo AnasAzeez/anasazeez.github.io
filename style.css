@@ -30,7 +30,7 @@ noscript {
 
 body,
 noscript {
-    background-color: var(--color-light-mode)
+    background-color: var(--color-dark-mode)
 }
 
 .main,
@@ -1099,58 +1099,54 @@ noscript {
 }
 
 /****************************************
-  SECTION: Certifications (Theme Adaptive)
+  SECTION: Certifications
 *****************************************/
 .certifications-section {
   margin: 50px 0; /* Spacing around the entire section */
 }
 
-/* Keeping consistency with the section heading */
+/* If your Publications heading has specific styles, 
+   replicate them here for a consistent look. */
 .certifications-section .section-heading {
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
 }
 
-/* Container for certification “cards” */
+
+/* Container to hold and center the certification “cards” */
 .certification-list {
   display: flex;
-  flex-direction: column; /* Stack vertically */
-  align-items: center; /* Center horizontally */
-  gap: 20px; /* Space between each box */
+  flex-direction: column;  /* Stack vertically */
+  align-items: center;     /* Center horizontally */
+  gap: 20px;               /* Space between each box */
 }
 
-/* The “box” for each certification */
+/* The “box” for each certification, matching or approximating 
+   the color & style from your Publications. */
 .certification-box {
-  /* Use theme-aware background colors */
-  background-color: var(--color-light-mode);
-  color: var(--color-black);
+  background-color: #27293d; /* Example dark purple background */
   border-radius: 10px;
   padding: 20px;
-  width: 80%;
-  max-width: 800px;
-  box-shadow: 0 4px 10px var(--color-shadowDark); /* Dynamic shadow */
-  transition: transform 0.3s ease;
+  color: #ffffff;           /* White text for contrast */
+  width: 80%;               /* Make the box wider */
+  max-width: 800px;         /* Limit how wide it can get */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Similar “card” shadow */
+  transition: transform 0.3s ease;           /* For a subtle hover effect */
 }
 
-/* Title styling remains the same */
+/* Title styling with increased font size and custom font family */
 .certification-title {
   margin: 0;
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;         /* Increased font size */
+  line-height: 1.5;          /* Adjusted line height for readability */
+  font-weight: 600; 
+  font-family: 'Poppins', sans-serif; /* Change to your desired font if needed */
 }
 
-/* Hover effect remains consistent */
+/* Optional: Hover effect to mimic Publications style */
 .certification-box:hover {
   transform: translateY(-3px);
 }
 
-/* LIGHT MODE OVERRIDES */
-.light-mode {
-  --tech-stack-box-first-color: var(--color-light-mode); /* Light background */
-  --color-white: var(--color-black); /* Dark text for contrast */
-  --color-shadowDark: rgba(0, 0, 0, 0.1); /* Softer shadow in light mode */
-}
 
 
 .tech-stack-wrapper {
