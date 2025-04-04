@@ -1857,38 +1857,39 @@ footer {
     }
 }
 
-/* Style for social buttons that reuse the letsTalkBtn styles */
+/* Reuse your existing .letsTalkBtn styles for gradient, hover, etc. */
+
+/* Additional rules for .socialBtn */
 .socialBtn {
-  width: 180px;      /* Adjust width as needed */
-  height: 40px;      /* Same height as the Let's Talk button */
+  width: 180px; /* match your Let's Talk! button width */
+  height: 40px; /* same height */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;          /* Space between icon and text */
+  gap: 8px;        /* space between icon and text */
   position: relative;
   border: none;
   cursor: pointer;
+  padding: 0;      /* remove default button padding */
+  border-radius: 7px; /* same corner radius as Let's Talk button */
 }
 
-/* Ensure the social icons are sized appropriately */
-.socialBtn .social-icon {
-  width: 24px;
-  height: 24px;
+/* Icon size */
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #000;       /* or #fff if you want white icons on dark backgrounds */
 }
 
-/* Style for the text inside social buttons */
+/* Text inside the button */
 .socialText {
   font-size: 1.4rem;
-  color: #000; /* Adjust based on your theme (e.g., #fff for dark background) */
+  color: #000;      /* or #fff for dark backgrounds */
+  white-space: nowrap; /* keep text in one line */
 }
 
-/* If needed, override any padding/margin so the button looks square */
-.socialBtn {
-  padding: 0;
-  border-radius: 7px; /* Matches the Let's Talk button shape */
-}
-
-/* Inherit background effects from letsTalkBtn */
+/* Make sure the .letsTalkBtn-BG uses your gradient properly 
+   if it doesn't automatically inherit from .letsTalkBtn. */
 .socialBtn .letsTalkBtn-BG {
   position: absolute;
   width: 100%;
