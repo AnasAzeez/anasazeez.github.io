@@ -416,6 +416,11 @@ noscript {
     font-weight: 100
 }
 
+
+.navbar-tabs-ul li.honours\\&awards {
+  white-space: nowrap;
+}
+
 .logo {
     width: 10%;
     height: 100%;
@@ -699,6 +704,7 @@ noscript {
 #info-para,
 .about-info p {
     font-weight: 400;
+    text-align: justify;
     font-size: 2rem
 }
 
