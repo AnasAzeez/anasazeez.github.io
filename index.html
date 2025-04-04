@@ -245,26 +245,31 @@
             <p class="jello">g</p>
             <p class="jello">.</p>
           </div>
-          </div>
+          
         </article>
 
         
-        <div class="contact-btn-div" data-aos="fade-up" data-aos-delay="800">
-          <a href="mailto:gautamgsk.gsk@gmail.com" tabindex="-1">
-            <button class="letsTalkBtn">
-              <p class="letsTalkBtn-text">Let's Talk!</p>
-              <span class="letsTalkBtn-BG"></span>
-            </button></a>
-   <!-- Google Scholar Button (using an image) -->
+        <!-- Container that holds all buttons -->
+<div class="contact-btn-div" style="display: flex; align-items: center; gap: 20px;">
+
+  <!-- "Let's Talk!" button (unchanged) -->
+  <a href="mailto:gautamgsk.gsk@gmail.com" tabindex="-1">
+    <button class="letsTalkBtn socialBtn">
+      <span class="socialText">Let's Talk!</span>
+      <span class="letsTalkBtn-BG"></span>
+    </button>
+  </a>
+
+  <!-- Scholar button (image + text) -->
   <a href="https://scholar.google.com/citations?hl=en&user=p8cdsVoAAAAJ" target="_blank" aria-label="Google Scholar">
     <button class="letsTalkBtn socialBtn">
-      <img src="src/svg/scholar.svg" alt="Google Scholar Icon" class="social-icon" />
+      <img src="src/svg/scholar.svg" alt="Scholar Icon" class="social-icon" />
       <span class="socialText">Scholar</span>
       <span class="letsTalkBtn-BG"></span>
     </button>
   </a>
 
-  <!-- ORCID Button (using an image) -->
+  <!-- ORCID button (image + text) -->
   <a href="https://orcid.org/0000-0003-2140-9617" target="_blank" aria-label="ORCID">
     <button class="letsTalkBtn socialBtn">
       <img src="src/svg/orchid.svg" alt="ORCID Icon" class="social-icon" />
@@ -273,7 +278,7 @@
     </button>
   </a>
 
-  <!-- LinkedIn Button (using inline SVG) -->
+  <!-- LinkedIn button (inline SVG + text) -->
   <a href="https://www.linkedin.com/in/gautam-kashyap-48021b159/" target="_blank" aria-label="LinkedIn">
     <button class="letsTalkBtn socialBtn">
       <svg viewBox="0 0 128 128" class="social-icon" aria-hidden="true">
@@ -284,6 +289,7 @@
     </button>
   </a>
 
+</div>
 
           
         <!-- contact-btn-div -->
