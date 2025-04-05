@@ -27,18 +27,33 @@
   flex: 1 1 auto;
 }
 
-/* On smaller screens, stack vertically */
+/* Responsive layout: stack text and buttons on small screens */
 @media (max-width: 768px) {
+  /* Make the main container a column */
   .landing-page-container {
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* or center */
+    justify-content: flex-start; /* text at the top */
+    padding-top: 20px;  /* add some spacing from the top */
+    min-height: auto;   /* allow the container to grow with content */
   }
 
+  /* Ensure the text container spans full width (or centered) */
+  .text-content {
+    width: 90%;  /* Adjust as needed */
+    text-align: justify;
+    margin-bottom: 20px;  /* space between text and buttons */
+  }
+  
+  /* Place the buttons container below the text */
   .contact-btn-div {
-    margin-top: 20px; /* space below text */
+    width: 90%;  /* Adjust as needed */
+    justify-content: center;  /* center buttons horizontally */
+    margin-top: 20px;
+    flex-wrap: wrap;  /* wrap buttons if needed */
   }
 }
+
 
 body,
 noscript {
