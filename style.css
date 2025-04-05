@@ -2193,3 +2193,27 @@ footer {
 .mobile-navbar-tabs-li.publications:hover > .mobile-dropdown-menu {
   display: flex;
 }
+/* Bigger font and spacing ONLY for publication boxes */
+.pub-box {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  padding: 1.5rem;
+  background-color: #fdfdfd; /* optional: a light background */
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  margin-bottom: 2rem;
+}
+
+/* Optional: make publication titles slightly bolder/larger */
+.pub-box .certification-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+.pub-box a {
+  color: #0a58ca;
+  text-decoration: underline;
+  font-weight: 500;
+}
