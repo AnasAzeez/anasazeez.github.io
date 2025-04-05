@@ -50,6 +50,19 @@
     margin-top: 80px; /* Adjust this value as needed */
   }
 </style>
+
+<script>
+  // Mobile Publications submenu toggle
+  const pubMobileTab = document.getElementById("publications-mobile-tab");
+  if (pubMobileTab) {
+    pubMobileTab.addEventListener("click", function(e) {
+      e.stopPropagation();
+      this.classList.toggle("open");
+    });
+  }
+</script>
+
+  
 <body class="body">
   
   <noscript>Allow Javascript</noscript>
