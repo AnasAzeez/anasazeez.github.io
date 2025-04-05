@@ -82,11 +82,17 @@
           </li>
           
 
-          <li class="publications" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
-            <a href="#publications" aria-label="publications menu button">
-              &#60;/Publications&#62;
-            </a>
-          </li>
+          <li class="publications navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+  <a href="#publications" aria-label="Publications menu button">&#60;/Publications&#62;</a>
+  <!-- Dropdown -->
+  <ul class="dropdown-menu">
+    <li><a href="#SCI-Indexed">SCI‑Indexed</a></li>
+    <li><a href="#ESCI-Indexed">ESCI‑Indexed</a></li>
+    <li><a href="#SCOPUS-Indexed">SCOPUS‑Indexed</a></li>
+    <li><a href="#Book-Chapters">Book Chapters</a></li>
+    <li><a href="#Peer-Reviewed-Conferences">Peer Reviewed Conferences</a></li>
+  </ul>
+</li>
           <li class="reviewer" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
             <a href="#reviewer" aria-label="reviewer menu button">
               &#60;/Reviewer&#62;
@@ -148,10 +154,18 @@
         </li>
         
         <li id="publications-mobile-tab" class="mobile-navbar-tabs-li publications" onclick="hidemenubyli()">
-          <a href="#publications" tabindex="0" aria-label="publications menu button">
-            &#60;/Publications&#62;
-          </a>
-        </li>
+  <a href="#publications" tabindex="0" aria-label="publications menu button">
+    &#60;/Publications&#62;
+  </a>
+  <!-- Mobile Dropdown -->
+  <ul class="mobile-dropdown-menu">
+    <li onclick="hidemenubyli()"><a href="#SCI-Indexed">&#60;/SCI‑Indexed&#62;</a></li>
+    <li onclick="hidemenubyli()"><a href="#ESCI-Indexed">&#60;/ESCI‑Indexed&#62;</a></li>
+    <li onclick="hidemenubyli()"><a href="#SCOPUS-Indexed">&#60;/SCOPUS‑Indexed&#62;</a></li>
+    <li onclick="hidemenubyli()"><a href="#Book-Chapters">&#60;/Book‑Chapters&#62;</a></li>
+    <li onclick="hidemenubyli()"><a href="#Peer-Reviewed-Conferences">&#60;/Peer‑Reviewed‑Conferences&#62;</a></li>
+  </ul>
+</li>
 
         <li id="reviewer-mobile-tab" class="mobile-navbar-tabs-li reviewer" onclick="hidemenubyli()">
           <a href="#reviewer" tabindex="0" aria-label="reviewer menu button">
