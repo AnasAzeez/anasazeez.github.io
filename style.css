@@ -11,28 +11,34 @@
     background-size: 60%
 }
 
-#preloader,
-.invertapplied,
-.invertsettinglabel {
-    filter: invert(1)
-}
 
-#preloader,
-noscript {
-    width: 100%;
-    height: 100%
-}
 
 .landing-page-container {
-  width: 100%;
-  /* height: calc(100vh - 115px); remove or comment out */
-  min-height: calc(100vh - 115px); /* allows growth if content is taller */
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  /* If you want them stacked on small screens, see step 2 below. */
+  min-height: 100vh; /* optional, for a full-screen look */
+  padding: 0 20px;
+}
+/* Let them share horizontal space */
+.text-content,
+.contact-btn-div {
+  flex: 1 1 auto;
 }
 
+/* On smaller screens, stack vertically */
+@media (max-width: 768px) {
+  .landing-page-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* or center */
+  }
+
+  .contact-btn-div {
+    margin-top: 20px; /* space below text */
+  }
+}
 
 body,
 noscript {
