@@ -2113,3 +2113,24 @@ footer {
         margin-top: 100px;  
     }
 }
+@media (max-width: 768px) {
+  .landing-page-container {
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    height: auto !important;
+    padding: 20px 10px !important;
+  }
+  .text-content, .contact-btn-div {
+    width: 100% !important;
+  }
+  .text-content {
+    text-align: justify !important;
+    margin-bottom: 20px !important;
+  }
+  .contact-btn-div {
+    display: block !important;
+    margin-top: 20px !important;
+    text-align: center;
+  }
+}
