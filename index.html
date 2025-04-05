@@ -144,11 +144,7 @@
     <!-- hamburger -->
     <div class="mobiletogglemenu" id="mobiletogglemenu">
       <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
-        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
-          <a href="#home" tabindex="0" aria-label="Home menu button">
-            &#60;/Home&#62;
-          </a>
-        </li>
+        
 
         <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
           <a href="#about" tabindex="0" aria-label="about menu button">
@@ -166,17 +162,16 @@
           </a>
         </li>
         
-        <li id="publications-mobile-tab" class="mobile-navbar-tabs-li publications" onclick="hidemenubyli()">
-  <a href="#publications" tabindex="0" aria-label="publications menu button">
+        <li id="publications-mobile-tab" class="mobile-navbar-tabs-li publications" tabindex="0">
+  <a href="#publications" tabindex="0" aria-label="publications menu button" onclick="hidemenubyli()">
     &#60;/Publications&#62;
   </a>
-  <!-- Mobile Dropdown -->
   <ul class="mobile-dropdown-menu">
-    <li onclick="hidemenubyli()"><a href="#SCI-Indexed">&#60;/SCI‑Indexed&#62;</a></li>
-    <li onclick="hidemenubyli()"><a href="#ESCI-Indexed">&#60;/ESCI‑Indexed&#62;</a></li>
-    <li onclick="hidemenubyli()"><a href="#SCOPUS-Indexed">&#60;/SCOPUS‑Indexed&#62;</a></li>
-    <li onclick="hidemenubyli()"><a href="#Book-Chapters">&#60;/Book‑Chapters&#62;</a></li>
-    <li onclick="hidemenubyli()"><a href="#Peer-Reviewed-Conferences">&#60;/Peer‑Reviewed‑Conferences&#62;</a></li>
+    <li><a href="#SCI-Indexed" onclick="hidemenubyli()">&#60;/SCI‑Indexed&#62;</a></li>
+    <li><a href="#ESCI-Indexed" onclick="hidemenubyli()">&#60;/ESCI‑Indexed&#62;</a></li>
+    <li><a href="#SCOPUS-Indexed" onclick="hidemenubyli()">&#60;/SCOPUS‑Indexed&#62;</a></li>
+    <li><a href="#Book-Chapters" onclick="hidemenubyli()">&#60;/Book‑Chapters&#62;</a></li>
+    <li><a href="#Peer-Reviewed-Conferences" onclick="hidemenubyli()">&#60;/Peer‑Reviewed‑Conferences&#62;</a></li>
   </ul>
 </li>
 
