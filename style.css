@@ -24,7 +24,13 @@ noscript {
 }
 
 .landing-page-container {
-  margin-top: 80px; /* Adjust 80px to match your navbar's height */
+  width: 100%;
+  /* height: calc(100vh - 115px); remove or comment out */
+  min-height: calc(100vh - 115px); /* allows growth if content is taller */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* If you want them stacked on small screens, see step 2 below. */
 }
 
 
