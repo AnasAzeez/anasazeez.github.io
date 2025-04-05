@@ -2134,3 +2134,47 @@ footer {
     text-align: center;
   }
 }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--tech-stack-box-first-color);
+  padding: 10px;
+  border-radius: 10px;
+  gap: 10px;
+  flex-direction: column;
+}
+.navbar-tabs-li:hover .dropdown-menu {
+  display: flex;
+}
+.dropdown-menu a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: block;
+  width: 100%;
+}
+.dropdown-menu a:hover {
+  background: var(--tech-stack-box-second-color);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+
+.mobile-dropdown-menu {
+  display: none;
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+.mobile-navbar-tabs-li.publications.open .mobile-dropdown-menu {
+  display: block;
+}
+.mobile-dropdown-menu li a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: block;
+  padding: 0.5rem 0;
+}
