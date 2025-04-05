@@ -2139,12 +2139,17 @@ footer {
   position: absolute;
   top: 100%;
   left: 0;
+  z-index: 1000;
   background: var(--tech-stack-box-first-color);
   padding: 10px;
   border-radius: 10px;
   gap: 10px;
   flex-direction: column;
 }
+.navbar-tabs-ul li.publications {
+  position: relative;
+}
+
 .navbar-tabs-li:hover .dropdown-menu {
   display: flex;
 }
@@ -2155,16 +2160,22 @@ footer {
   display: block;
   width: 100%;
 }
+.navbar-tabs-ul li.publications:hover .dropdown-menu {
+  display: flex;
+}
 .dropdown-menu a:hover {
   background: var(--tech-stack-box-second-color);
   border-radius: 5px;
   padding: 5px;
 }
-
+.navbar {
+  overflow: visible;
+}
 
 .mobile-dropdown-menu {
   display: none;
   list-style: none;
+    flex-direction: column;
   padding-left: 1rem;
   margin-top: 0.5rem;
 }
@@ -2177,4 +2188,8 @@ footer {
   font-size: 1.6rem;
   display: block;
   padding: 0.5rem 0;
+}
+.mobile-navbar-tabs-li.publications:focus-within > .mobile-dropdown-menu,
+.mobile-navbar-tabs-li.publications:hover > .mobile-dropdown-menu {
+  display: flex;
 }
